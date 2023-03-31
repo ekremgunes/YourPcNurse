@@ -11,6 +11,7 @@ C:\Users\Lenovo\Desktop\calısma\Yeni klasör\YourPcNurse\obj\Debug\YourPcNurse.
 C:\Users\Lenovo\Desktop\calısma\Yeni klasör\YourPcNurse\obj\Debug\YourPcNurse.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\calısma\Yeni klasör\YourPcNurse\obj\Debug\YourPcNurse.exe
 C:\Users\Lenovo\Desktop\calısma\Yeni klasör\YourPcNurse\obj\Debug\YourPcNurse.pdb
+<<<<<<< HEAD
 C:\Users\Lenovo\Desktop\development\yourpcnurse.dev\YourPcNurse\bin\Debug\YourPcNurse.exe.config
 C:\Users\Lenovo\Desktop\development\yourpcnurse.dev\YourPcNurse\bin\Debug\YourPcNurse.exe
 C:\Users\Lenovo\Desktop\development\yourpcnurse.dev\YourPcNurse\bin\Debug\YourPcNurse.pdb
@@ -24,3 +25,18 @@ C:\Users\Lenovo\Desktop\development\yourpcnurse.dev\YourPcNurse\obj\Debug\YourPc
 C:\Users\Lenovo\Desktop\development\yourpcnurse.dev\YourPcNurse\obj\Debug\YourPcNurse.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\development\yourpcnurse.dev\YourPcNurse\obj\Debug\YourPcNurse.exe
 C:\Users\Lenovo\Desktop\development\yourpcnurse.dev\YourPcNurse\obj\Debug\YourPcNurse.pdb
+=======
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\bin\Debug\YourPcNurse.exe.config
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\bin\Debug\YourPcNurse.exe
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\bin\Debug\YourPcNurse.pdb
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\obj\Debug\YourPcNurse.csproj.AssemblyReference.cache
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\obj\Debug\YourPcNurse.csproj.SuggestedBindingRedirects.cache
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\obj\Debug\YourPcNurse.EyeNotify.resources
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\obj\Debug\YourPcNurse.MoveNotify.resources
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\obj\Debug\YourPcNurse.Properties.Resources.resources
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\obj\Debug\YourPcNurse.YourPcNurse.resources
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\obj\Debug\YourPcNurse.csproj.GenerateResource.cache
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\obj\Debug\YourPcNurse.csproj.CoreCompileInputs.cache
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\obj\Debug\YourPcNurse.exe
+C:\Users\aslan\Source\Repos\YourPcNurse\YourPcNurse\obj\Debug\YourPcNurse.pdb
+>>>>>>> 70f563be9bc2505975450242ffb9f06050ca9325
