@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(YourPcNurse));
             this.btnClose = new System.Windows.Forms.Button();
             this.lblVersion = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -265,6 +266,7 @@
             this.Controls.Add(this.btnPause);
             this.Cursor = System.Windows.Forms.Cursors.Cross;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "YourPcNurse";
             this.Load += new System.EventHandler(this.YourPcNurse_Load);
             this.ResumeLayout(false);

@@ -76,6 +76,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MoveNotify";
             this.Text = "MoveNotify";
             this.Load += new System.EventHandler(this.MoveNotify_Load);

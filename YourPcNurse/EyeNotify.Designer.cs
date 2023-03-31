@@ -77,6 +77,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EyeNotify";
             this.Text = "EyeNotify";
             this.Load += new System.EventHandler(this.EyeNotify_Load);
