@@ -134,8 +134,7 @@ namespace YourPcNurse
 
         private void btnHide_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
+            //this.Hide();
         }
     }
 }
