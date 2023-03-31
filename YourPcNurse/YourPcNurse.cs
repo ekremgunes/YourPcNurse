@@ -128,14 +128,13 @@ namespace YourPcNurse
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
 
         }
 
         private void btnHide_Click(object sender, EventArgs e)
         {
             this.Hide();
-
         }
     }
 }
