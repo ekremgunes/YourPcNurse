@@ -98,6 +98,7 @@ namespace YourPcNurse
         {
             MoveController.moveCenter(this);
             lblVersion.Text = $" v{version}";
+            
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -134,7 +135,37 @@ namespace YourPcNurse
 
         private void btnHide_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
         }
+
+        private void appIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.Show();
+        }
+
+        private void ReturnTheAppToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+        private void StartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            eyeTimer.Start();
+            moveTimer.Start();
+        }
+
+        private void PauseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            eyeTimer.Stop();
+            moveTimer.Stop();
+        }
+
+        private void CloseToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+
     }
 }

@@ -47,6 +47,14 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnPause = new System.Windows.Forms.Button();
+            this.appIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ReturnTheAppToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.StartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PauseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CloseToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnClose
@@ -243,6 +251,72 @@
             this.btnPause.UseVisualStyleBackColor = true;
             this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
+            // appIcon
+            // 
+            this.appIcon.ContextMenuStrip = this.contextMenuStrip1;
+            this.appIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("appIcon.Icon")));
+            this.appIcon.Text = "YourPcNurse";
+            this.appIcon.Visible = true;
+            this.appIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.appIcon_MouseDoubleClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ReturnTheAppToolStripMenuItem,
+            this.StartToolStripMenuItem,
+            this.PauseToolStripMenuItem,
+            this.CloseToolStripMenuItem1,
+            this.toolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 136);
+            // 
+            // ReturnTheAppToolStripMenuItem
+            // 
+            this.ReturnTheAppToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ReturnTheAppToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.ReturnTheAppToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ReturnTheAppToolStripMenuItem.Image")));
+            this.ReturnTheAppToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
+            this.ReturnTheAppToolStripMenuItem.Name = "ReturnTheAppToolStripMenuItem";
+            this.ReturnTheAppToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ReturnTheAppToolStripMenuItem.Text = "YourPcNurse";
+            this.ReturnTheAppToolStripMenuItem.Click += new System.EventHandler(this.ReturnTheAppToolStripMenuItem_Click);
+            // 
+            // StartToolStripMenuItem
+            // 
+            this.StartToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.StartToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.StartToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.StartToolStripMenuItem.Name = "StartToolStripMenuItem";
+            this.StartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.StartToolStripMenuItem.Text = "Start";
+            this.StartToolStripMenuItem.Click += new System.EventHandler(this.StartToolStripMenuItem_Click);
+            // 
+            // PauseToolStripMenuItem
+            // 
+            this.PauseToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.PauseToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.PauseToolStripMenuItem.Name = "PauseToolStripMenuItem";
+            this.PauseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.PauseToolStripMenuItem.Text = "Pause";
+            this.PauseToolStripMenuItem.Click += new System.EventHandler(this.PauseToolStripMenuItem_Click);
+            // 
+            // CloseToolStripMenuItem1
+            // 
+            this.CloseToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CloseToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.CloseToolStripMenuItem1.Name = "CloseToolStripMenuItem1";
+            this.CloseToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.CloseToolStripMenuItem1.Text = "Close";
+            this.CloseToolStripMenuItem1.Click += new System.EventHandler(this.CloseToolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Text = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Visible = false;
+            // 
             // YourPcNurse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,6 +343,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "YourPcNurse";
             this.Load += new System.EventHandler(this.YourPcNurse_Load);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,6 +368,13 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnPause;
+        private System.Windows.Forms.NotifyIcon appIcon;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem ReturnTheAppToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem StartToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem PauseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CloseToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 
