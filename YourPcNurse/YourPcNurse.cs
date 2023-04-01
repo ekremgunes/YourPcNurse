@@ -12,15 +12,37 @@ namespace YourPcNurse
 {
     public partial class YourPcNurse : Form
     {
-        private short version = 1;
         public YourPcNurse()
         {
             InitializeComponent();
         }
-        int moveTimeCounter = 0;
-        int eyeTimeCounter = 0;
-        int eyeTimeSecondCounter = 0;
-        int moveTimeSecondCounter = 0;
+        private short appUsingMin = 0;
+        private int appUsingHours = 0;
+        private int moveTimeCounter = 0;
+        private int eyeTimeCounter = 0;
+        private int eyeTimeSecondCounter = 0;
+        private int moveTimeSecondCounter = 0;
+        private bool isStoped = false;
+        
+        #region tickEvents
+        private void appTimer_Tick(object sender, EventArgs e)
+        {
+            appUsingMin++;
+            if (appUsingMin == 60)
+            {
+                appUsingHours++;
+                appUsingMin = 0;
+            }
+            if (appUsingHours > 0)
+            {
+                minToolStripMenuItem.Text = $"{appUsingHours} h | {appUsingMin} min";
+            }
+            else
+            {
+                minToolStripMenuItem.Text = $"{appUsingMin} min";
+
+            }
+        }
 
         private void eyeTimer_Tick(object sender, EventArgs e)
         {
@@ -93,29 +115,38 @@ namespace YourPcNurse
                 lblMoveMin.Text = "00";
             }
         }
+        #endregion
 
-        private void YourPcNurse_Load(object sender, EventArgs e)
-        {
-            MoveController.moveCenter(this);
-            lblVersion.Text = $" v{version}";
-        }
+
+        #region buttons
+
+
 
         private void btnStart_Click(object sender, EventArgs e)
         {
             eyeTimer.Start();
             moveTimer.Start();
+            if (isStoped != true)
+            {
+                appTimer.Start();
+
+            }
         }
 
         private void btnPause_Click(object sender, EventArgs e)
         {
             eyeTimer.Stop();
             moveTimer.Stop();
+            isStoped = true;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             eyeTimer.Stop();
             moveTimer.Stop();
+            appTimer.Stop();
+            appUsingMin = 0;
+            appUsingHours = 0;
             moveTimeCounter = 0;
             eyeTimeCounter = 0;
             eyeTimeSecondCounter = 0;
@@ -124,17 +155,63 @@ namespace YourPcNurse
             lblEyeSn.Text = "00";
             lblMoveMin.Text = "00";
             lblMoveSn.Text = "00";
+            minToolStripMenuItem.Text = "0 min";
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
 
         }
 
         private void btnHide_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
         }
+        #endregion
+
+        #region menuStripMethods
+
+
+        private void appIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.Show();
+        }
+
+        private void ReturnTheAppToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+        private void StartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            eyeTimer.Start();
+            moveTimer.Start();
+            if (isStoped != true)
+            {
+                appTimer.Start();
+
+            }
+        }
+
+        private void PauseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            eyeTimer.Stop();
+            moveTimer.Stop();
+            isStoped = true;
+        }
+
+        private void CloseToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        #endregion
+
+        private void YourPcNurse_Load(object sender, EventArgs e)
+        {
+            MoveController.moveCenter(this);
+        }
+
+
     }
 }
