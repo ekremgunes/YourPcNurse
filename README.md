@@ -1,7 +1,4 @@
 # YourPcNurse
-<<<<<<< HEAD
-For those who stay at the computer for a long time, a reminder of eye rest and movement health application
-=======
 For those who stay at the computer for a long time, a reminder of eye rest and movement health application -EN
 <br>
 <br>
@@ -26,4 +23,6 @@ it will come off. You can also view the amount of time you have worked through t
 </ul>
 <h2>License</h2>
 <a href="LICENSE">MIT</a>
->>>>>>> 46d2ed00d4d7c23dd5da3a0d9f4d2111152664d1
+<br><hr>
+<a href="https://github.com/ekremgunes/YourPcNurse/raw/master/app.zip" download>Download here</a>
+
