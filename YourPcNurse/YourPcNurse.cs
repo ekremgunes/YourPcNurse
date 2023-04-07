@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace YourPcNurse
@@ -22,8 +15,8 @@ namespace YourPcNurse
         private int eyeTimeCounter = 0;
         private int eyeTimeSecondCounter = 0;
         private int moveTimeSecondCounter = 0;
-        private bool isStoped = false;
-        
+        private Random randomCross = new Random();
+
         #region tickEvents
         private void appTimer_Tick(object sender, EventArgs e)
         {
@@ -72,10 +65,12 @@ namespace YourPcNurse
             }
             if (eyeTimeCounter == 25) // 25 min
             {
-                var eyeNotfiy = new EyeNotify();
-                eyeNotfiy.Show();
+                eyeTimer.Stop();
                 eyeTimeCounter = 0;
                 lblEyeMin.Text = "00";
+                var eyeNotfiy = new EyeNotify();
+                eyeNotfiy.Show();
+
             }
         }
 
@@ -108,11 +103,18 @@ namespace YourPcNurse
 
             if (moveTimeCounter == 55) // 55 min.
             {
-                var moveNotfiy = new MoveNotify();
-                moveNotfiy.Show();
-
+                if (eyeTimeCounter == moveTimeCounter)
+                {
+                    moveTimeCounter -= 1; 
+                    moveTimeSecondCounter -= 40; //reduce 45s  for crossed notification
+                    return;
+                }
+                moveTimer.Stop();
                 moveTimeCounter = 0;
                 lblMoveMin.Text = "00";
+                var moveNotfiy = new MoveNotify();
+                moveNotfiy.Show();                
+
             }
         }
         #endregion
@@ -126,18 +128,16 @@ namespace YourPcNurse
         {
             eyeTimer.Start();
             moveTimer.Start();
-            if (isStoped != true)
-            {
-                appTimer.Start();
+            appTimer.Start();
 
-            }
+
         }
 
         private void btnPause_Click(object sender, EventArgs e)
         {
             eyeTimer.Stop();
             moveTimer.Stop();
-            isStoped = true;
+            appTimer.Stop();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -187,18 +187,16 @@ namespace YourPcNurse
         {
             eyeTimer.Start();
             moveTimer.Start();
-            if (isStoped != true)
-            {
-                appTimer.Start();
+            appTimer.Start();
 
-            }
+
         }
 
         private void PauseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             eyeTimer.Stop();
             moveTimer.Stop();
-            isStoped = true;
+            appTimer.Stop();
         }
 
         private void CloseToolStripMenuItem1_Click(object sender, EventArgs e)

@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,15 +9,24 @@ namespace YourPcNurse
     {
         public MoveNotify()
         {
+
             InitializeComponent();
         }
-
+        [DllImport("user32.dll")]
+        static extern bool SetForegroundWindow(IntPtr hWnd);
 
 
         private async void MoveNotify_Load(object sender, EventArgs e)
         {
             MoveController.moveRightBottom(this);
-            await Task.Delay(3003);
+
+            IntPtr hWnd = this.Handle;
+            SetForegroundWindow(hWnd);
+
+            var yourPcNurse = (YourPcNurse)Application.OpenForms["YourPcNurse"];
+            await Task.Delay(4000);
+
+            yourPcNurse.moveTimer.Start();
             Notify.CloseNotify(this);
 
         }

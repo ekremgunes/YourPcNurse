@@ -30,6 +30,10 @@ namespace YourPcNurse
                     
                     if (process.Id != currentProcess.Id && process.MainModule.FileName == currentProcess.MainModule.FileName)
                     {
+                        //get active form
+                        var yourPcNurse = (YourPcNurse)Application.OpenForms["YourPcNurse"];
+                        //show  on top
+                        yourPcNurse.Show();
                         NativeMethods.SetForegroundWindow(process.MainWindowHandle);
                         break;
                     }

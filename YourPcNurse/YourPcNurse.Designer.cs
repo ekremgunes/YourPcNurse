@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(YourPcNurse));
             this.btnClose = new System.Windows.Forms.Button();
-            this.lblVersion = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lblMoveSn = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -73,25 +72,13 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // lblVersion
-            // 
-            this.lblVersion.AutoSize = true;
-            this.lblVersion.Font = new System.Drawing.Font("Mongolian Baiti", 7F);
-            this.lblVersion.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lblVersion.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblVersion.Location = new System.Drawing.Point(208, 27);
-            this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(23, 11);
-            this.lblVersion.TabIndex = 30;
-            this.lblVersion.Text = "v1.1";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(88, 200);
+            this.label8.Location = new System.Drawing.Point(88, 197);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(26, 39);
             this.label8.TabIndex = 29;
@@ -103,7 +90,7 @@
             this.lblMoveSn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblMoveSn.ForeColor = System.Drawing.Color.White;
             this.lblMoveSn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblMoveSn.Location = new System.Drawing.Point(110, 214);
+            this.lblMoveSn.Location = new System.Drawing.Point(110, 211);
             this.lblMoveSn.Name = "lblMoveSn";
             this.lblMoveSn.Size = new System.Drawing.Size(34, 25);
             this.lblMoveSn.TabIndex = 28;
@@ -115,7 +102,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(91, 96);
+            this.label6.Location = new System.Drawing.Point(91, 93);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(26, 39);
             this.label6.TabIndex = 27;
@@ -127,7 +114,7 @@
             this.lblEyeSn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblEyeSn.ForeColor = System.Drawing.Color.White;
             this.lblEyeSn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblEyeSn.Location = new System.Drawing.Point(111, 110);
+            this.lblEyeSn.Location = new System.Drawing.Point(111, 107);
             this.lblEyeSn.Name = "lblEyeSn";
             this.lblEyeSn.Size = new System.Drawing.Size(39, 25);
             this.lblEyeSn.TabIndex = 26;
@@ -152,7 +139,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F);
             this.label4.ForeColor = System.Drawing.Color.LightGray;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(129, 24);
+            this.label4.Location = new System.Drawing.Point(141, 21);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 17);
             this.label4.TabIndex = 24;
@@ -163,7 +150,7 @@
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(49, 184);
+            this.label3.Location = new System.Drawing.Point(49, 179);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 23;
@@ -175,7 +162,7 @@
             this.lblMoveMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.lblMoveMin.ForeColor = System.Drawing.Color.White;
             this.lblMoveMin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblMoveMin.Location = new System.Drawing.Point(44, 203);
+            this.lblMoveMin.Location = new System.Drawing.Point(44, 200);
             this.lblMoveMin.Name = "lblMoveMin";
             this.lblMoveMin.Size = new System.Drawing.Size(55, 39);
             this.lblMoveMin.TabIndex = 21;
@@ -187,7 +174,7 @@
             this.lblEyeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.lblEyeMin.ForeColor = System.Drawing.Color.White;
             this.lblEyeMin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblEyeMin.Location = new System.Drawing.Point(47, 99);
+            this.lblEyeMin.Location = new System.Drawing.Point(47, 96);
             this.lblEyeMin.Name = "lblEyeMin";
             this.lblEyeMin.Size = new System.Drawing.Size(55, 39);
             this.lblEyeMin.TabIndex = 20;
@@ -208,7 +195,7 @@
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(51, 78);
+            this.label2.Location = new System.Drawing.Point(51, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 22;
@@ -218,7 +205,7 @@
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.btnClear.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnClear.Location = new System.Drawing.Point(252, 145);
+            this.btnClear.Location = new System.Drawing.Point(252, 146);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(55, 30);
             this.btnClear.TabIndex = 19;
@@ -231,7 +218,7 @@
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.btnStart.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnStart.Location = new System.Drawing.Point(252, 72);
+            this.btnStart.Location = new System.Drawing.Point(252, 73);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(56, 31);
             this.btnStart.TabIndex = 18;
@@ -243,7 +230,7 @@
             // 
             this.btnPause.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.btnPause.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnPause.Location = new System.Drawing.Point(252, 109);
+            this.btnPause.Location = new System.Drawing.Point(252, 110);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(55, 30);
             this.btnPause.TabIndex = 17;
@@ -339,9 +326,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(355, 310);
+            this.ClientSize = new System.Drawing.Size(355, 295);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblMoveSn);
             this.Controls.Add(this.label6);
@@ -369,7 +355,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblMoveSn;
         private System.Windows.Forms.Label label6;
@@ -379,8 +364,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblMoveMin;
         private System.Windows.Forms.Label lblEyeMin;
-        private System.Windows.Forms.Timer moveTimer;
-        private System.Windows.Forms.Timer eyeTimer;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnStart;
@@ -393,6 +376,8 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem minToolStripMenuItem;
         private System.Windows.Forms.Timer appTimer;
+        public System.Windows.Forms.Timer eyeTimer;
+        public System.Windows.Forms.Timer moveTimer;
     }
 }
 
