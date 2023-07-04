@@ -1,8 +1,8 @@
 # YourPcNurse
-For those who stay at the computer for a long time, a reminder of eye rest and movement health application -EN
+For those who stay at the computer for a long time, a reminder of eye rest and movement health application - EN
 <br>
 <br>
-Uzun süre bilgisayar başında kalanlar için göz istirahati ve hareket sağlığı hatırlatması uygulaması -TR
+Uzun süre bilgisayar başında kalanlar için göz istirahati ve hareket sağlığı hatırlatması uygulaması - TR
 <br>
 <h2>Description of Application</h2>
 <p>Notification for eye rest every 25 minutes and body movement every 55 minutes
